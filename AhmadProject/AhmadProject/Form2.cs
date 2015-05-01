@@ -21,14 +21,14 @@ namespace AhmadProject
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            Form3 obj3 = new Form3();
-            progressBar1.Increment(2);
+            Form3 obj4 = new Form3();
+            progressBar1.Increment(8);
             label1.Text = "LOADING  " + progressBar1.Value.ToString() + "%";
             if (progressBar1.Value == progressBar1.Maximum)
             {
                 time.Stop();
                 this.Hide();
-                obj3.Show();
+                obj4.Show();
             }
 
         }

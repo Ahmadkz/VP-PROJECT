@@ -6,41 +6,41 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace AhmadProject
 {
     public partial class Form3 : Form
     {
+        Random random = new Random();
+        List<string> icons = new List<string>()
+    {
+             "!","!","N","N",",",",","K","K",
+             "b","b","v","v","w","w","z","z"
+    };
         public Form3()
         {
             InitializeComponent();
+            AssignIconsToSquares();
         }
-
-        private void nEWGAMEToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AssignIconsToSquares()
         {
-            Form3 obj3 = new Form3();
-            this.Close();
-            obj3.Show();
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                Label iconlabel = control as Label;
+                if (iconlabel != null)
+                {
+                    int randomno = random.Next(icons.Count);
+                    iconlabel.Text = icons[randomno];
+                    icons.RemoveAt(randomno);
+                }
+
+
+            }
+
+
+
         }
 
-        private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        
-        private void iNSTRUCTIONToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(" Flip over two cards, if they match they will disappear, if they don't... remember them and flip over more cards. Win by matching all the cards.");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-     
-
-        
+       
     }
 }
