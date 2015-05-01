@@ -32,6 +32,7 @@ namespace AhmadProject
                     int randomno = random.Next(icons.Count);
                     iconlabel.Text = icons[randomno];
                     icons.RemoveAt(randomno);
+                    iconlabel.ForeColor = iconlabel.BackColor;
                 }
 
 
@@ -39,6 +40,20 @@ namespace AhmadProject
 
 
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Label clickedlabel = sender as Label;
+            if (clickedlabel != null)
+            {
+                if (clickedlabel.ForeColor == Color.Black)
+                    return;
+                else
+                {
+                    clickedlabel.ForeColor = Color.Black;
+                }
+            }
         }
 
        
