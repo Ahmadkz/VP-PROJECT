@@ -48,6 +48,8 @@ namespace AhmadProject
 
         private void Cards_Click(object sender, EventArgs e)
         {
+            if (timer1.Enabled == true)
+                return;
             
             Label clickedlabel = sender as Label;
             if (clickedlabel != null)
@@ -58,22 +60,32 @@ namespace AhmadProject
                 {
                     firstclicked = clickedlabel;
                     firstclicked.ForeColor = Color.Black;
+                    return;
                 }
-                else if (secondclicked == null)
+                secondclicked = clickedlabel;
+                secondclicked.ForeColor = Color.Black;
+
+                if (firstclicked.Text == secondclicked.Text)
                 {
-                    secondclicked = clickedlabel;
-                    secondclicked.ForeColor = Color.Black;
+                    firstclicked = null;
+                    secondclicked = null;
+                    return;
                 }
 
-                else if (firstclicked != secondclicked)
-                {
-                    firstclicked.ForeColor = firstclicked.BackColor;
-                    secondclicked.ForeColor = secondclicked.BackColor;
-                }
-
+                timer1.Start();
             }
+            
 
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            firstclicked.ForeColor = firstclicked.BackColor;
+            secondclicked.ForeColor = secondclicked.BackColor;
+            firstclicked = null;
+            secondclicked = null;
         }
 
        
