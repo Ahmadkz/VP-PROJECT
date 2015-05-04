@@ -25,12 +25,12 @@ namespace AhmadProject
         private void PlayButton_Click(object sender, EventArgs e)
         {
             Form2 obj2 = new Form2();
-           // this.Close();
-            obj2.Show();
+             obj2.Show();
+            // this.Close();
 
         }
  //===============================Exit Button=======================================//
-        private void button2_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

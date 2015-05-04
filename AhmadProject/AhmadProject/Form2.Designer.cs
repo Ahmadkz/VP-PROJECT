@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.LoadingBar = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // progressBar1
+            // LoadingBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 271);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(461, 22);
-            this.progressBar1.TabIndex = 0;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            this.LoadingBar.Location = new System.Drawing.Point(12, 271);
+            this.LoadingBar.Name = "LoadingBar";
+            this.LoadingBar.Size = new System.Drawing.Size(461, 22);
+            this.LoadingBar.TabIndex = 0;
+            this.LoadingBar.Click += new System.EventHandler(this.LoadingBar_Click);
             // 
             // label1
             // 
@@ -61,9 +61,10 @@
             this.BackgroundImage = global::AhmadProject.Properties.Resources.Background1;
             this.ClientSize = new System.Drawing.Size(485, 373);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.LoadingBar);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar LoadingBar;
         private System.Windows.Forms.Label label1;
     }
 }

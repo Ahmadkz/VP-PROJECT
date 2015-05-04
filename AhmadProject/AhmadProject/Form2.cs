@@ -19,16 +19,17 @@ namespace AhmadProject
 
 //===============================Progress bar function=======================================// 
 
-        private void progressBar1_Click(object sender, EventArgs e)
+        private void LoadingBar_Click(object sender, EventArgs e)
         {
             Form3 obj4 = new Form3();
-            progressBar1.Increment(8);
-            label1.Text = "LOADING  " + progressBar1.Value.ToString() + "%";
-            if (progressBar1.Value == progressBar1.Maximum)
+            LoadingBar.Increment(8);
+            label1.Text = "LOADING  " + LoadingBar.Value.ToString() + "%";
+            if (LoadingBar.Value == LoadingBar.Maximum)
             {
                 time.Stop();
-                this.Hide();
                 obj4.Show();
+                this.Close();
+                
             }
 
         }
@@ -40,12 +41,17 @@ namespace AhmadProject
         {
 
             time.Interval = 250;
-            time.Tick += new EventHandler(progressBar1_Click);
+            time.Tick += new EventHandler(LoadingBar_Click);
             time.Start();
 
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
