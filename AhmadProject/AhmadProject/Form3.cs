@@ -11,8 +11,10 @@ namespace AhmadProject
 {
     public partial class Form3 : Form
     {
+        Timer time = new Timer();
         Label firstclicked = null;
         Label secondclicked = null;
+        
         Random random = new Random();
         List<string> icons = new List<string>()
     {
@@ -28,7 +30,7 @@ namespace AhmadProject
         }
         private void AssignIconsToSquares()
         {
-            foreach (Control control in tableLayoutPanel1.Controls)
+            foreach (Control control in GameTimer.Controls)
             {
                 Label iconlabel = control as Label;
                 if (iconlabel != null)
@@ -87,6 +89,20 @@ namespace AhmadProject
             firstclicked = null;
             secondclicked = null;
         }
+
+        private void GameTimer_Paint(object sender, PaintEventArgs e)
+        {
+           
+           
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+           
+        }
+
+        
 
        
     }

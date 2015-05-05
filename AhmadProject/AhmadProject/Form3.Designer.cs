@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.GameTimer = new System.Windows.Forms.TableLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -47,44 +47,46 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Cards = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel1.SuspendLayout();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.GameTimer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // GameTimer
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.label16, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label15, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label14, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label13, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Cards, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 423);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.GameTimer.ColumnCount = 5;
+            this.GameTimer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.GameTimer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.Controls.Add(this.label16, 4, 3);
+            this.GameTimer.Controls.Add(this.label15, 3, 3);
+            this.GameTimer.Controls.Add(this.label14, 2, 3);
+            this.GameTimer.Controls.Add(this.label13, 1, 3);
+            this.GameTimer.Controls.Add(this.label12, 4, 2);
+            this.GameTimer.Controls.Add(this.label11, 3, 2);
+            this.GameTimer.Controls.Add(this.label10, 2, 2);
+            this.GameTimer.Controls.Add(this.label9, 1, 2);
+            this.GameTimer.Controls.Add(this.label8, 4, 1);
+            this.GameTimer.Controls.Add(this.label7, 3, 1);
+            this.GameTimer.Controls.Add(this.label6, 2, 1);
+            this.GameTimer.Controls.Add(this.label5, 1, 1);
+            this.GameTimer.Controls.Add(this.label4, 4, 0);
+            this.GameTimer.Controls.Add(this.label3, 3, 0);
+            this.GameTimer.Controls.Add(this.label2, 2, 0);
+            this.GameTimer.Controls.Add(this.Cards, 1, 0);
+            this.GameTimer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GameTimer.Location = new System.Drawing.Point(0, 0);
+            this.GameTimer.Name = "GameTimer";
+            this.GameTimer.RowCount = 4;
+            this.GameTimer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.GameTimer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.GameTimer.Size = new System.Drawing.Size(818, 423);
+            this.GameTimer.TabIndex = 0;
+            this.GameTimer.Paint += new System.Windows.Forms.PaintEventHandler(this.GameTimer_Paint);
             // 
             // label16
             // 
@@ -299,22 +301,27 @@
             this.timer1.Interval = 750;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 10000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 423);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.GameTimer);
             this.Name = "Form3";
             this.Text = "Form4";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.GameTimer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel GameTimer;
         private System.Windows.Forms.Label Cards;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -332,5 +339,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
