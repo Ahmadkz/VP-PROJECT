@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PlayButton = new System.Windows.Forms.Button();
-            this.ExitButton = new System.Windows.Forms.Button();
+            this.Play = new System.Windows.Forms.Label();
+            this.EXIT = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // PlayButton
+            // Play
             // 
-            this.PlayButton.BackColor = System.Drawing.Color.Peru;
-            this.PlayButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayButton.Location = new System.Drawing.Point(50, 274);
-            this.PlayButton.Name = "PlayButton";
-            this.PlayButton.Size = new System.Drawing.Size(114, 51);
-            this.PlayButton.TabIndex = 0;
-            this.PlayButton.Text = "PLAY";
-            this.PlayButton.UseVisualStyleBackColor = false;
-            this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
+            this.Play.AutoSize = true;
+            this.Play.BackColor = System.Drawing.Color.Transparent;
+            this.Play.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Play.Location = new System.Drawing.Point(63, 289);
+            this.Play.Name = "Play";
+            this.Play.Size = new System.Drawing.Size(99, 36);
+            this.Play.TabIndex = 2;
+            this.Play.Text = "PLAY";
+            this.Play.Click += new System.EventHandler(this.Play_Click);
             // 
-            // ExitButton
+            // EXIT
             // 
-            this.ExitButton.BackColor = System.Drawing.Color.Peru;
-            this.ExitButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(308, 274);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(114, 51);
-            this.ExitButton.TabIndex = 1;
-            this.ExitButton.Text = "EXIT";
-            this.ExitButton.UseVisualStyleBackColor = false;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.EXIT.AutoSize = true;
+            this.EXIT.BackColor = System.Drawing.Color.Transparent;
+            this.EXIT.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EXIT.Location = new System.Drawing.Point(328, 289);
+            this.EXIT.Name = "EXIT";
+            this.EXIT.Size = new System.Drawing.Size(91, 36);
+            this.EXIT.TabIndex = 3;
+            this.EXIT.Text = "EXIT";
+            this.EXIT.Click += new System.EventHandler(this.EXIT_Click);
             // 
             // Form1
             // 
@@ -62,19 +62,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AhmadProject.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(486, 354);
-            this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.PlayButton);
+            this.Controls.Add(this.EXIT);
+            this.Controls.Add(this.Play);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button PlayButton;
-        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Label Play;
+        private System.Windows.Forms.Label EXIT;
 
         public System.EventHandler Exitbutton_Click { get; set; }
     }
