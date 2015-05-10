@@ -11,7 +11,10 @@ namespace AhmadProject
 {
     public partial class Form3 : Form
     {
-            Random random = new Random();
+        Label firstclicked = null;
+      //  Label secondclicked = null;
+        
+        Random random = new Random();
         List<string> icons = new List<string>()
     {
              "!","N",",","K",
@@ -34,14 +37,16 @@ namespace AhmadProject
 	         "<","#","{","^",
 	         "+","-"
     };
+       
         public Form3()
         {
             InitializeComponent();
             AssignIconsToSquares();
         }
+
         private void AssignIconsToSquares()
         {
-            foreach (Control control in GameTimer.Controls)
+            foreach (Control control in GameLayout.Controls)
             {
                 Label iconlabel = control as Label;
                 if (iconlabel != null)
@@ -49,7 +54,7 @@ namespace AhmadProject
                     int randomno = random.Next(icons.Count);
                     iconlabel.Text = icons[randomno];
                     icons.RemoveAt(randomno);
-                  iconlabel.ForeColor = iconlabel.BackColor;
+                    timer2.Start();
                 }
 
 
@@ -59,10 +64,51 @@ namespace AhmadProject
 
         }
 
+       
 
         private void Form3_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Cards_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled == true)
+                return;
+            Label clickedLabel = sender as Label;
+            if (clickedLabel != null)
+            {
+                if (clickedLabel.ForeColor == Color.Black)
+                    return;
+                if (firstclicked == null)
+                {
+                    firstclicked = clickedLabel;
+                    clickedLabel.ForeColor = Color.Black;
+                    return;
+                }
+                
+                timer1.Start();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            firstclicked.ForeColor = firstclicked.BackColor;
+            
+            firstclicked = null;
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            foreach (Control control in GameLayout.Controls)
+            {
+                Label iconlabel = control as Label;
+                iconlabel.ForeColor = iconlabel.BackColor;
+            }
+            timer2.Stop();
+               
         }
     }
 }
