@@ -32,7 +32,7 @@ namespace AhmadProject
             Form2 obj2 = new Form2();
             obj2.Show();
             //this.Close();
-            this.Hide();
+           // this.Hide();
         }
  //===============================Exit Button=======================================//
         private void EXIT_Click(object sender, EventArgs e)
