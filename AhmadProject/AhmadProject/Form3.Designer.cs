@@ -314,6 +314,8 @@
             this.Controls.Add(this.GameTimer);
             this.Name = "Form3";
             this.Text = "Form4";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.GameTimer.ResumeLayout(false);
             this.ResumeLayout(false);
 

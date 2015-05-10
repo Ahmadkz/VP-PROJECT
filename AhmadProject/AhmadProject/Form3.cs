@@ -92,7 +92,7 @@ namespace AhmadProject
 
         private void GameTimer_Paint(object sender, PaintEventArgs e)
         {
-           
+            
            
 
         }
@@ -100,6 +100,16 @@ namespace AhmadProject
         private void timer2_Tick(object sender, EventArgs e)
         {
            
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
 
         
