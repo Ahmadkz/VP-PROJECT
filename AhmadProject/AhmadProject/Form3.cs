@@ -54,7 +54,7 @@ namespace AhmadProject
                     int randomno = random.Next(icons.Count);
                     iconlabel.Text = icons[randomno];
                     icons.RemoveAt(randomno);
-                    timer2.Start();
+                    
                 }
 
 
@@ -100,15 +100,47 @@ namespace AhmadProject
             
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+
+
+        private void StartButton_Click(object sender, EventArgs e)
         {
-            foreach (Control control in GameLayout.Controls)
+            try
             {
-                Label iconlabel = control as Label;
-                iconlabel.ForeColor = iconlabel.BackColor;
+                foreach (Control control1 in GameLayout.Controls)
+                {
+                    Label iconlabel1 = control1 as Label;
+                    iconlabel1.ForeColor = iconlabel1.BackColor;
+                }
+                
             }
-            timer2.Stop();
-               
+            catch 
+            {
+ 
+            }
+
         }
+
+        private void showingIcon_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= iconshow.Count; i++)
+            {
+
+                int randomno = random.Next(iconshow.Count);
+                showingIcon.Text = icons[randomno];
+                
+
+
+
+
+            }
+        }
+
+      
+
+        
+
+       
+        
+        
     }
 }
