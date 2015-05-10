@@ -12,7 +12,7 @@ namespace AhmadProject
     public partial class Form3 : Form
     {
         Label firstclicked = null;
-        Label ShowingIcon = null;
+      //  Label ShowingIcon = null;
         
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -114,21 +114,22 @@ namespace AhmadProject
 
         private void ShowIcon_Click(object sender, EventArgs e)
         {
-
-
             foreach(string elements in iconshow)
             {
 
                 int randomno = random.Next(iconshow.Count);
                 ShowIcon.Text = iconshow[randomno];
+                // icons.RemoveAt(randomno);
                 Label clickedLabel = sender as Label;
                 clickedLabel.ForeColor = Color.Black;
-                ShowingIcon = clickedLabel;
+
+
 
 
             }
-          
         }
+
+        
 
 
 
