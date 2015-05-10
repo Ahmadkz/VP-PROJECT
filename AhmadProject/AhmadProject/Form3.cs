@@ -12,7 +12,7 @@ namespace AhmadProject
     public partial class Form3 : Form
     {
         Label firstclicked = null;
-      //  Label secondclicked = null;
+        Label ShowingIcon = null;
         
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -86,6 +86,7 @@ namespace AhmadProject
                     clickedLabel.ForeColor = Color.Black;
                     return;
                 }
+               
                 
                 timer1.Start();
             }
@@ -95,45 +96,45 @@ namespace AhmadProject
         {
             timer1.Stop();
             firstclicked.ForeColor = firstclicked.BackColor;
-            
             firstclicked = null;
             
         }
 
-
-
         private void StartButton_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 foreach (Control control1 in GameLayout.Controls)
                 {
                     Label iconlabel1 = control1 as Label;
                     iconlabel1.ForeColor = iconlabel1.BackColor;
                 }
-                
-            }
-            catch 
-            {
- 
-            }
 
+            
         }
 
-        private void showingIcon_Click(object sender, EventArgs e)
+        private void ShowIcon_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i <= iconshow.Count; i++)
+
+
+            foreach(string elements in iconshow)
             {
 
                 int randomno = random.Next(iconshow.Count);
-                showingIcon.Text = icons[randomno];
-                
-
-
+                ShowIcon.Text = iconshow[randomno];
+                Label clickedLabel = sender as Label;
+                clickedLabel.ForeColor = Color.Black;
+                ShowingIcon = clickedLabel;
 
 
             }
+          
         }
+
+
+
+       
+
+
 
       
 
