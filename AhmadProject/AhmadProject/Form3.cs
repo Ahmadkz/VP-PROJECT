@@ -126,15 +126,15 @@ namespace AhmadProject
                 int randomno = random.Next(iconshow.Count);
                 ShowIcon.Text = iconshow[randomno];
                 iconshow.RemoveAt(randomno);
-                Label clickedLabel = sender as Label;
-                clickedLabel.ForeColor = Color.Black;
+                ShowIcon.ForeColor = Color.Black;
                 ShowingIcon.Text = ShowIcon.Text;
+
             if (firstclicked.Text == ShowingIcon.Text)
             {
                 Score_Click(sender, e);
                 firstclicked = null;
                 ShowingIcon = null;
-                if (iconshow == null)
+                if (iconshow != null)
                 {
                     ShowIcon_Click(sender, e);
                 }

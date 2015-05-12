@@ -565,7 +565,7 @@
             // Score
             // 
             this.Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Score.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Score.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Score.Location = new System.Drawing.Point(858, 178);
             this.Score.Name = "Score";
             this.Score.Size = new System.Drawing.Size(144, 89);
@@ -586,7 +586,6 @@
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            this.Click += new System.EventHandler(this.StartButton_Click);
             this.GameLayout.ResumeLayout(false);
             this.ResumeLayout(false);
 
