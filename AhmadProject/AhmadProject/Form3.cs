@@ -12,8 +12,8 @@ namespace AhmadProject
     public partial class Form3 : Form
     {
         Label firstclicked = null;
-      //  Label ShowingIcon = null;
-        
+        Label ShowingIcon = null;
+        int score = 0;
         Random random = new Random();
         List<string> icons = new List<string>()
     {
@@ -107,26 +107,44 @@ namespace AhmadProject
                 {
                     Label iconlabel1 = control1 as Label;
                     iconlabel1.ForeColor = iconlabel1.BackColor;
+                    ShowIcon.Show();
                 }
+                try
+                {
+                    ShowIcon_Click(sender, e);
+                }
+                catch(Exception f)
+                {
 
-            
+                }
         }
 
         private void ShowIcon_Click(object sender, EventArgs e)
         {
-            foreach(string elements in iconshow)
-            {
+            
 
                 int randomno = random.Next(iconshow.Count);
                 ShowIcon.Text = iconshow[randomno];
-                // icons.RemoveAt(randomno);
+                iconshow.RemoveAt(randomno);
                 Label clickedLabel = sender as Label;
                 clickedLabel.ForeColor = Color.Black;
-
-
-
-
+                ShowingIcon.Text = ShowIcon.Text;
+            if (firstclicked.Text == ShowingIcon.Text)
+            {
+                Score_Click(sender, e);
+                firstclicked = null;
+                ShowingIcon = null;
+                if (iconshow == null)
+                {
+                    ShowIcon_Click(sender, e);
+                }
             }
+        }
+
+        private void Score_Click(object sender, EventArgs e)
+        {
+            
+            Score.Text = "SCORE : " + score++;
         }
 
         

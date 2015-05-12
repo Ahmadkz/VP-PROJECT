@@ -63,6 +63,7 @@
             this.GameLayout = new System.Windows.Forms.TableLayoutPanel();
             this.StartButton = new System.Windows.Forms.Button();
             this.ShowIcon = new System.Windows.Forms.Label();
+            this.Score = new System.Windows.Forms.Label();
             this.GameLayout.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -560,7 +561,17 @@
             this.ShowIcon.TabIndex = 2;
             this.ShowIcon.Text = "c";
             this.ShowIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ShowIcon.Click += new System.EventHandler(this.ShowIcon_Click);
+            // 
+            // Score
+            // 
+            this.Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Score.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Score.Location = new System.Drawing.Point(858, 178);
+            this.Score.Name = "Score";
+            this.Score.Size = new System.Drawing.Size(144, 89);
+            this.Score.TabIndex = 3;
+            this.Score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Score.Click += new System.EventHandler(this.Score_Click);
             // 
             // Form3
             // 
@@ -568,6 +579,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1005, 537);
+            this.Controls.Add(this.Score);
             this.Controls.Add(this.ShowIcon);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.GameLayout);
@@ -616,6 +628,7 @@
         private System.Windows.Forms.TableLayoutPanel GameLayout;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Label ShowIcon;
+        private System.Windows.Forms.Label Score;
 
         public System.EventHandler button1_Click { get; set; }
     }
