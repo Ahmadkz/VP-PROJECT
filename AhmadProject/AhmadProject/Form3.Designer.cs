@@ -561,17 +561,17 @@
             this.ShowIcon.TabIndex = 2;
             this.ShowIcon.Text = "c";
             this.ShowIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ShowIcon.Click += new System.EventHandler(this.ShowIcon_Click);
             // 
             // Score
             // 
             this.Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Score.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Score.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Score.Location = new System.Drawing.Point(858, 178);
             this.Score.Name = "Score";
             this.Score.Size = new System.Drawing.Size(144, 89);
             this.Score.TabIndex = 3;
             this.Score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Score.Click += new System.EventHandler(this.Score_Click);
             // 
             // Form3
             // 

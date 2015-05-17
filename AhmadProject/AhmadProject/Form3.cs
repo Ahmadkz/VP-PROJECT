@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace AhmadProject
@@ -13,6 +9,7 @@ namespace AhmadProject
     {
         Label firstclicked = null;
         Label ShowingIcon = null;
+        
         int score = 0;
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -83,11 +80,10 @@ namespace AhmadProject
                 if (firstclicked == null)
                 {
                     firstclicked = clickedLabel;
-                    clickedLabel.ForeColor = Color.Black;
+                    firstclicked.ForeColor = Color.Black;
                     return;
                 }
-               
-                
+
                 timer1.Start();
             }
         }
@@ -107,45 +103,48 @@ namespace AhmadProject
                 {
                     Label iconlabel1 = control1 as Label;
                     iconlabel1.ForeColor = iconlabel1.BackColor;
-                    ShowIcon.Show();
                 }
-                try
-                {
-                    ShowIcon_Click(sender, e);
-                }
-                catch(Exception f)
-                {
 
-                }
+                ShowIcon_Click(sender , e);
+                
         }
 
         private void ShowIcon_Click(object sender, EventArgs e)
         {
-            
 
+    
                 int randomno = random.Next(iconshow.Count);
                 ShowIcon.Text = iconshow[randomno];
                 iconshow.RemoveAt(randomno);
-                ShowIcon.ForeColor = Color.Black;
-                ShowingIcon.Text = ShowIcon.Text;
+                ShowingIcon = ShowIcon;
+                ShowingIcon.ForeColor = BackColor;
 
-            if (firstclicked.Text == ShowingIcon.Text)
-            {
-                Score_Click(sender, e);
-                firstclicked = null;
-                ShowingIcon = null;
-                if (iconshow != null)
+                if (ShowingIcon.Text == firstclicked.Text)
                 {
-                    ShowIcon_Click(sender, e);
+                    firstclicked = null;
+                    ShowingIcon.ForeColor = ShowingIcon.BackColor;
+                   
+                    if (iconshow != null)
+                    {
+                        ShowIcon_Click(sender, e);
+                    }
                 }
-            }
+
+     
         }
 
         private void Score_Click(object sender, EventArgs e)
         {
             
-            Score.Text = "SCORE : " + score++;
+            Score.Text = "SCORE :" + score++.ToString();
+            Score.Show();
         }
+
+        
+
+        
+
+        
 
         
 
