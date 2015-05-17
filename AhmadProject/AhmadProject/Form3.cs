@@ -89,7 +89,8 @@ namespace AhmadProject
                 {
                     firstclicked = null;
                     ShowIcon_Click(sender, e);
-                    Score.Show();
+                    Score_Click(sender, e);
+                    
                 }
 
                 timer1.Start();
@@ -134,8 +135,8 @@ namespace AhmadProject
 
         private void Score_Click(object sender, EventArgs e)
         {
-            
-            Score.Text = "SCORE :" + score++.ToString();
+            score++;
+            Score.Text = "SCORE :" + score.ToString();
             Score.Show();
         }
 
@@ -144,6 +145,8 @@ namespace AhmadProject
         {
             MessageBox.Show("You Win the game");
         }
+
+      
         
 
         
