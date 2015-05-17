@@ -561,7 +561,6 @@
             this.ShowIcon.TabIndex = 2;
             this.ShowIcon.Text = "c";
             this.ShowIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ShowIcon.Click += new System.EventHandler(this.ShowIcon_Click);
             // 
             // Score
             // 

@@ -8,9 +8,10 @@ namespace AhmadProject
     public partial class Form3 : Form
     {
         Label firstclicked = null;
-        Label ShowingIcon = null;
+     //   Label ShowingIcon = null;
         
         int score = 0;
+        int randomno;
         Random random = new Random();
         List<string> icons = new List<string>()
     {
@@ -83,15 +84,23 @@ namespace AhmadProject
                     firstclicked.ForeColor = Color.Black;
                     return;
                 }
+            }
+                if (ShowIcon.Text == firstclicked.Text)
+                {
+                    firstclicked = null;
+                    ShowIcon_Click(sender, e);
+                    Score.Show();
+                }
 
                 timer1.Start();
-            }
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
             firstclicked.ForeColor = firstclicked.BackColor;
+            
             firstclicked = null;
             
         }
@@ -113,22 +122,12 @@ namespace AhmadProject
         {
 
     
-                int randomno = random.Next(iconshow.Count);
+                randomno = random.Next(iconshow.Count);
                 ShowIcon.Text = iconshow[randomno];
                 iconshow.RemoveAt(randomno);
-                ShowingIcon = ShowIcon;
-                ShowingIcon.ForeColor = BackColor;
+               
 
-                if (ShowingIcon.Text == firstclicked.Text)
-                {
-                    firstclicked = null;
-                    ShowingIcon.ForeColor = ShowingIcon.BackColor;
-                   
-                    if (iconshow != null)
-                    {
-                        ShowIcon_Click(sender, e);
-                    }
-                }
+               
 
      
         }
@@ -140,8 +139,11 @@ namespace AhmadProject
             Score.Show();
         }
 
-        
 
+        public void YouWin()
+        {
+            MessageBox.Show("You Win the game");
+        }
         
 
         
