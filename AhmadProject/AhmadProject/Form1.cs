@@ -40,6 +40,11 @@ namespace AhmadProject
             this.Close();
         }
 
+        private void Form1_BackgroundImageLayoutChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }

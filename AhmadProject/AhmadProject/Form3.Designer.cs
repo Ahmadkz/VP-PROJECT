@@ -76,6 +76,7 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label1.Location = new System.Drawing.Point(343, 0);
@@ -90,6 +91,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label2.Location = new System.Drawing.Point(3, 0);
@@ -104,6 +106,7 @@
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label3.Location = new System.Drawing.Point(173, 0);
@@ -118,6 +121,7 @@
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label4.Location = new System.Drawing.Point(513, 0);
@@ -132,6 +136,7 @@
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label5.Location = new System.Drawing.Point(683, 0);
@@ -146,6 +151,7 @@
             // 
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label6.Location = new System.Drawing.Point(3, 89);
@@ -160,6 +166,7 @@
             // 
             this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label7.Location = new System.Drawing.Point(173, 89);
@@ -174,6 +181,7 @@
             // 
             this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label8.Location = new System.Drawing.Point(343, 89);
@@ -188,6 +196,7 @@
             // 
             this.label9.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label9.Location = new System.Drawing.Point(513, 89);
@@ -202,6 +211,7 @@
             // 
             this.label10.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label10.Location = new System.Drawing.Point(683, 89);
@@ -216,6 +226,7 @@
             // 
             this.label11.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label11.Location = new System.Drawing.Point(3, 178);
@@ -230,6 +241,7 @@
             // 
             this.label12.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label12.Location = new System.Drawing.Point(173, 178);
@@ -244,6 +256,7 @@
             // 
             this.label13.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label13.Location = new System.Drawing.Point(343, 178);
@@ -258,6 +271,7 @@
             // 
             this.label14.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label14.Location = new System.Drawing.Point(513, 178);
@@ -272,6 +286,7 @@
             // 
             this.label15.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label15.Location = new System.Drawing.Point(683, 178);
@@ -286,6 +301,7 @@
             // 
             this.label16.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label16.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label16.Location = new System.Drawing.Point(3, 267);
@@ -300,6 +316,7 @@
             // 
             this.label17.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label17.Location = new System.Drawing.Point(173, 267);
@@ -314,6 +331,7 @@
             // 
             this.label18.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label18.Location = new System.Drawing.Point(343, 267);
@@ -328,6 +346,7 @@
             // 
             this.label19.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label19.Location = new System.Drawing.Point(513, 267);
@@ -342,6 +361,7 @@
             // 
             this.label20.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label20.Location = new System.Drawing.Point(683, 267);
@@ -356,6 +376,7 @@
             // 
             this.label21.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label21.Location = new System.Drawing.Point(3, 356);
@@ -370,6 +391,7 @@
             // 
             this.label22.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label22.Location = new System.Drawing.Point(173, 356);
@@ -384,6 +406,7 @@
             // 
             this.label23.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label23.Location = new System.Drawing.Point(343, 356);
@@ -398,6 +421,7 @@
             // 
             this.label24.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label24.Location = new System.Drawing.Point(513, 356);
@@ -412,6 +436,7 @@
             // 
             this.label25.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label25.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label25.Location = new System.Drawing.Point(683, 356);
@@ -426,6 +451,7 @@
             // 
             this.label26.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label26.Location = new System.Drawing.Point(343, 445);
@@ -440,6 +466,7 @@
             // 
             this.label27.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label27.Location = new System.Drawing.Point(513, 445);
@@ -454,6 +481,7 @@
             // 
             this.label28.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label28.Location = new System.Drawing.Point(683, 445);
@@ -467,6 +495,7 @@
             // label29
             // 
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label29.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label29.Location = new System.Drawing.Point(3, 445);
@@ -475,10 +504,12 @@
             this.label29.TabIndex = 33;
             this.label29.Text = "c";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label29.Click += new System.EventHandler(this.Cards_Click);
             // 
             // label30
             // 
             this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label30.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label30.Location = new System.Drawing.Point(173, 445);
@@ -487,9 +518,11 @@
             this.label30.TabIndex = 34;
             this.label30.Text = "c";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label30.Click += new System.EventHandler(this.Cards_Click);
             // 
             // GameLayout
             // 
+            this.GameLayout.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.GameLayout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.GameLayout.ColumnCount = 5;
             this.GameLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -542,6 +575,7 @@
             // 
             // StartButton
             // 
+            this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartButton.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.Location = new System.Drawing.Point(858, 0);
             this.StartButton.Name = "StartButton";
@@ -565,7 +599,7 @@
             // Score
             // 
             this.Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Score.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Score.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Score.Location = new System.Drawing.Point(858, 178);
             this.Score.Name = "Score";
             this.Score.Size = new System.Drawing.Size(144, 89);
@@ -577,6 +611,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 537);
             this.Controls.Add(this.Score);
             this.Controls.Add(this.ShowIcon);

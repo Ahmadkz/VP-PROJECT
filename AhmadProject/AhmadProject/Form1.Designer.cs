@@ -36,6 +36,7 @@
             // 
             this.Play.AutoSize = true;
             this.Play.BackColor = System.Drawing.Color.Transparent;
+            this.Play.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Play.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Play.Location = new System.Drawing.Point(63, 289);
             this.Play.Name = "Play";
@@ -48,6 +49,7 @@
             // 
             this.EXIT.AutoSize = true;
             this.EXIT.BackColor = System.Drawing.Color.Transparent;
+            this.EXIT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EXIT.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EXIT.Location = new System.Drawing.Point(328, 289);
             this.EXIT.Name = "EXIT";
@@ -67,6 +69,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.BackgroundImageLayoutChanged += new System.EventHandler(this.Form1_BackgroundImageLayoutChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

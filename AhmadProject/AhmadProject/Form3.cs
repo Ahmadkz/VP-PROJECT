@@ -10,7 +10,7 @@ namespace AhmadProject
         Label firstclicked = null;
      //   Label ShowingIcon = null;
         
-        int score = 0;
+       int score = 0;
         int randomno;
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -72,7 +72,9 @@ namespace AhmadProject
         private void Cards_Click(object sender, EventArgs e)
         {
             if (timer1.Enabled == true)
+            {
                 return;
+            }
             Label clickedLabel = sender as Label;
             if (clickedLabel != null)
             {
@@ -84,22 +86,42 @@ namespace AhmadProject
                     firstclicked.ForeColor = Color.Black;
                     return;
                 }
-            }
-                if (ShowIcon.Text == firstclicked.Text)
-                {
-                    firstclicked = null;
-                    ShowIcon_Click(sender, e);
-                    Score_Click(sender, e);
-                    
-                }
 
-                timer1.Start();
+
+                
+
+            }
+
+            timer1.Start();
+            
+            if (ShowIcon.Text == firstclicked.Text)
+            {
+               
+                firstclicked = null;
+                ShowIcon_Click(sender, e);
+                score++;
+                Score_Click(sender, e);
+                timer1.Stop();
+
+            }
+            else if (ShowIcon.Text != firstclicked.Text)
+            {
+              
+                score--;
+
+                Score_Click(sender, e);
+            }
+            
+                
+
+                
             
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
+          
             firstclicked.ForeColor = firstclicked.BackColor;
             
             firstclicked = null;
@@ -108,13 +130,15 @@ namespace AhmadProject
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            
+                   
+                score = 0;
+                Score_Click(sender, e);
                 foreach (Control control1 in GameLayout.Controls)
                 {
                     Label iconlabel1 = control1 as Label;
                     iconlabel1.ForeColor = iconlabel1.BackColor;
                 }
-
+                
                 ShowIcon_Click(sender , e);
                 
         }
@@ -135,8 +159,9 @@ namespace AhmadProject
 
         private void Score_Click(object sender, EventArgs e)
         {
-            score++;
-            Score.Text = "SCORE :" + score.ToString();
+
+
+            Score.Text = "SCORE: " + score;
             Score.Show();
         }
 
