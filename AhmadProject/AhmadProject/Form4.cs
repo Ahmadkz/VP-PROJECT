@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 namespace AhmadProject
 {
-    public partial class Form3 : Form
+    public partial class Form4 : Form
     {
         Label firstclicked = null;
-     //   Label ShowingIcon = null;
-        
-       int score = 0;
+        //   Label ShowingIcon = null;
+
+        int score = 0;
         int randomno;
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -35,13 +39,11 @@ namespace AhmadProject
 	         "<","#","{","^",
 	         "+","-"
     };
-       
-        public Form3()
+        public Form4()
         {
             InitializeComponent();
             AssignIconsToSquares();
         }
-
         private void AssignIconsToSquares()
         {
             foreach (Control control in GameLayout.Controls)
@@ -52,7 +54,7 @@ namespace AhmadProject
                     int randomno = random.Next(icons.Count);
                     iconlabel.Text = icons[randomno];
                     icons.RemoveAt(randomno);
-                    
+
                 }
 
 
@@ -62,9 +64,8 @@ namespace AhmadProject
 
         }
 
-       
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }
@@ -88,113 +89,73 @@ namespace AhmadProject
                 }
 
 
-                
+
 
             }
 
             timer1.Start();
-            
+
             if (ShowIcon.Text == firstclicked.Text)
             {
-               
+
                 firstclicked = null;
                 ShowIcon_Click(sender, e);
                 score++;
-                Score_Click(sender, e);
+                Score_Click_Click(sender, e);
                 timer1.Stop();
 
             }
             else if (ShowIcon.Text != firstclicked.Text)
             {
-              
+
                 score--;
 
-                Score_Click(sender, e);
+                Score_Click_Click(sender, e);
             }
-            
-                
 
-                
-            
+
+
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
-          
+
             firstclicked.ForeColor = firstclicked.BackColor;
-            
+
             firstclicked = null;
-            
         }
 
-        private void StartButton_Click(object sender, EventArgs e)
+        private void Start_button_Click(object sender, EventArgs e)
         {
-                   
-                score = 0;
-                Score_Click(sender, e);
-                foreach (Control control1 in GameLayout.Controls)
-                {
-                    Label iconlabel1 = control1 as Label;
-                    iconlabel1.ForeColor = iconlabel1.BackColor;
-                }
-                
-                ShowIcon_Click(sender , e);
-                
+            score = 0;
+            Score_Click_Click(sender, e);
+            foreach (Control control1 in GameLayout.Controls)
+            {
+                Label iconlabel1 = control1 as Label;
+                iconlabel1.ForeColor = iconlabel1.BackColor;
+            }
+
+            ShowIcon_Click(sender, e);
         }
 
         private void ShowIcon_Click(object sender, EventArgs e)
         {
-
-            if (iconshow.Count != 0)
-            {
-                randomno = random.Next(iconshow.Count);
-                ShowIcon.Text = iconshow[randomno];
-                iconshow.RemoveAt(randomno);
-            }
-            else
-            {
-
-            }
-
-               
-
-     
+            randomno = random.Next(iconshow.Count);
+            ShowIcon.Text = iconshow[randomno];
+            iconshow.RemoveAt(randomno);
         }
 
-        private void Score_Click(object sender, EventArgs e)
+        private void Score_Click_Click(object sender, EventArgs e)
         {
 
-
-            Score.Text = "SCORE: " + score;
-            Score.Show();
+            Score_Click.Text = "SCORE: " + score;
+            Score_Click.Show();
         }
 
-
-        public void YouWin()
-        {
-            MessageBox.Show("You Win the game");
-        }
-
-      
-        
-
-        
-
-        
-
-
-
-       
-
-
-
-      
-
-        
-
-       
-        
         
     }
 }
+
