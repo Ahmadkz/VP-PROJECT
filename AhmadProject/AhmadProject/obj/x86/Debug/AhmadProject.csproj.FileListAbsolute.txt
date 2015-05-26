@@ -17,3 +17,5 @@ C:\Users\Ahmad\Documents\GitHub\VP-Project\AhmadProject\AhmadProject\obj\x86\Deb
 C:\Users\Ahmad\Documents\GitHub\VP-Project\AhmadProject\AhmadProject\obj\x86\Debug\AhmadProject.Properties.Resources.resources
 C:\Users\Ahmad\Documents\GitHub\VP-Project\AhmadProject\AhmadProject\obj\x86\Debug\AhmadProject.csproj.GenerateResource.Cache
 C:\Users\Ahmad\Documents\GitHub\VP-Project\AhmadProject\AhmadProject\obj\x86\Debug\AhmadProject.Form1.resources
+C:\Users\Ahmad\Documents\GitHub\VP-Project\AhmadProject\AhmadProject\obj\x86\Debug\AhmadProject.csprojResolveAssemblyReference.cache
+C:\Users\Ahmad\Documents\GitHub\VP-Project\AhmadProject\AhmadProject\obj\x86\Debug\AhmadProject.Form4.resources

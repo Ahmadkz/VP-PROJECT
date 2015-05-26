@@ -154,7 +154,9 @@ namespace AhmadProject
             }
             else
             {
-
+                Form4 obj4 = new Form4();
+              //  Application.Exit();
+                obj4.Show();
             }
 
                
@@ -171,10 +173,7 @@ namespace AhmadProject
         }
 
 
-        public void YouWin()
-        {
-            MessageBox.Show("You Win the game");
-        }
+        
 
       
         

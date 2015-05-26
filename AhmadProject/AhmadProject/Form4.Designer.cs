@@ -64,6 +64,7 @@
             this.Start_button = new System.Windows.Forms.Button();
             this.ShowIcon = new System.Windows.Forms.Label();
             this.Score_Click = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.GameLayout.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -539,7 +540,7 @@
             // Score_Click
             // 
             this.Score_Click.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Score_Click.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Score_Click.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Score_Click.Location = new System.Drawing.Point(872, 150);
             this.Score_Click.Name = "Score_Click";
             this.Score_Click.Size = new System.Drawing.Size(138, 75);
@@ -547,12 +548,21 @@
             this.Score_Click.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Score_Click.Click += new System.EventHandler(this.Score_Click_Click);
             // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(942, 78);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(68, 70);
+            this.label31.TabIndex = 5;
+            this.label31.Click += new System.EventHandler(this.ShowIcon_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1022, 451);
+            this.Controls.Add(this.label31);
             this.Controls.Add(this.Score_Click);
             this.Controls.Add(this.ShowIcon);
             this.Controls.Add(this.Start_button);
@@ -602,5 +612,6 @@
         private System.Windows.Forms.Button Start_button;
         private System.Windows.Forms.Label ShowIcon;
         private System.Windows.Forms.Label Score_Click;
+        private System.Windows.Forms.Label label31;
     }
 }
