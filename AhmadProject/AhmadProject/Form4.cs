@@ -13,7 +13,6 @@ namespace AhmadProject
     {
         Label firstclicked = null;
         //   Label ShowingIcon = null;
-
         int score = 0;
         int randomno;
         Random random = new Random();
@@ -46,6 +45,9 @@ namespace AhmadProject
         }
         private void AssignIconsToSquares()
         {
+            Form3 obj3 = new Form3();
+            score = obj3.transferscore();
+            
             foreach (Control control in GameLayout.Controls)
             {
                 Label iconlabel = control as Label;
@@ -150,6 +152,7 @@ namespace AhmadProject
 
         private void Score_Click_Click(object sender, EventArgs e)
         {
+            
 
             Score_Click.Text = "SCORE: " + score;
             Score_Click.Show();

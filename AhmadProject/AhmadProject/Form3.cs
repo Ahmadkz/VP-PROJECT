@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Data;
+using System.Linq;
+using System.Text;
 
 namespace AhmadProject
 {
@@ -155,7 +159,6 @@ namespace AhmadProject
             else
             {
                 Form4 obj4 = new Form4();
-              //  Application.Exit();
                 obj4.Show();
             }
 
@@ -166,10 +169,13 @@ namespace AhmadProject
 
         private void Score_Click(object sender, EventArgs e)
         {
-
-
             Score.Text = "SCORE: " + score;
             Score.Show();
+        }
+
+        public int transferscore()
+        {
+            return score;
         }
 
 

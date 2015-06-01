@@ -107,7 +107,7 @@
             this.GameLayout.Controls.Add(this.label3, 2, 0);
             this.GameLayout.Controls.Add(this.label2, 1, 0);
             this.GameLayout.Controls.Add(this.label1, 0, 0);
-            this.GameLayout.Location = new System.Drawing.Point(0, 0);
+            this.GameLayout.Location = new System.Drawing.Point(-3, 0);
             this.GameLayout.Name = "GameLayout";
             this.GameLayout.RowCount = 6;
             this.GameLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
