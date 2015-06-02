@@ -71,7 +71,7 @@ namespace AhmadProject
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Cards_Click(object sender, EventArgs e)
@@ -159,7 +159,8 @@ namespace AhmadProject
             }
             else
             {
-                
+
+
                 Form4 obj4 = new Form4();
                 obj4.Show();
             }
