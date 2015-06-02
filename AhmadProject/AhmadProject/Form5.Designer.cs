@@ -551,6 +551,7 @@
             this.Controls.Add(this.GameLayout);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.GameLayout.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

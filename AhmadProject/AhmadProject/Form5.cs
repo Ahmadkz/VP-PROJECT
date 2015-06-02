@@ -114,6 +114,8 @@ namespace AhmadProject
 
         }
 
+       
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -158,6 +160,11 @@ namespace AhmadProject
         public void wingame()
         {
             MessageBox.Show("You Have finished all level your score is {0}", Score_click.Text);
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
         }
 
     }
