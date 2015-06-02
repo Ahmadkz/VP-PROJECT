@@ -12,7 +12,7 @@ namespace AhmadProject
     public partial class Form5 : Form
     {
          Label firstclicked = null;
-        //   Label ShowingIcon = null;
+       
         int score = 0;
         int randomno;
         Random random = new Random();
@@ -65,6 +65,99 @@ namespace AhmadProject
 
 
 
+        }
+
+        private void Cards_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled == true)
+            {
+                return;
+            }
+            Label clickedLabel = sender as Label;
+            if (clickedLabel != null)
+            {
+                if (clickedLabel.ForeColor == Color.Black)
+                    return;
+                if (firstclicked == null)
+                {
+                    firstclicked = clickedLabel;
+                    firstclicked.ForeColor = Color.Black;
+                    return;
+                }
+
+
+
+
+            }
+
+            timer1.Start();
+
+            if (ShowIcon.Text == firstclicked.Text)
+            {
+                iconshow.RemoveAt(randomno);
+                firstclicked = null;
+                ShowIcon_Click(sender, e);
+                score++;
+                Score_click_Click(sender, e);
+                timer1.Stop();
+
+            }
+            else if (ShowIcon.Text != firstclicked.Text)
+            {
+
+                score--;
+
+                Score_click_Click(sender, e);
+            }
+
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+
+            firstclicked.ForeColor = firstclicked.BackColor;
+
+            firstclicked = null;
+        }
+
+        private void ShowIcon_Click(object sender, EventArgs e)
+        {
+            if (iconshow.Count != 0)
+            {
+                randomno = random.Next(iconshow.Count);
+                ShowIcon.Text = iconshow[randomno];
+                //  iconshow.RemoveAt(randomno);
+            }
+            else
+            {
+                wingame();
+            }
+        }
+
+        private void Start_Click(object sender, EventArgs e)
+        {
+            score = 0;
+            Score_click_Click(sender, e);
+            foreach (Control control1 in GameLayout.Controls)
+            {
+                Label iconlabel1 = control1 as Label;
+                iconlabel1.ForeColor = iconlabel1.BackColor;
+            }
+
+            ShowIcon_Click(sender, e);
+        }
+
+        private void Score_click_Click(object sender, EventArgs e)
+        {
+            Score_click.Text = "SCORE: " + score;
+            Score_click.Show();
+        }
+        public void wingame()
+        {
+            MessageBox.Show("You Have finished all level your score is {0}", Score_click.Text);
         }
 
     }

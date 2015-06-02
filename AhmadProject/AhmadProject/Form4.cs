@@ -99,7 +99,7 @@ namespace AhmadProject
 
             if (ShowIcon.Text == firstclicked.Text)
             {
-
+                iconshow.RemoveAt(randomno);
                 firstclicked = null;
                 ShowIcon_Click(sender, e);
                 score++;
@@ -145,9 +145,17 @@ namespace AhmadProject
 
         private void ShowIcon_Click(object sender, EventArgs e)
         {
-            randomno = random.Next(iconshow.Count);
-            ShowIcon.Text = iconshow[randomno];
-            iconshow.RemoveAt(randomno);
+            if (iconshow.Count != 0)
+            {
+                randomno = random.Next(iconshow.Count);
+                ShowIcon.Text = iconshow[randomno];
+              //  iconshow.RemoveAt(randomno);
+            }
+            else
+            {
+                Form5 obj5 = new Form5();
+                obj5.Show();
+            }
         }
 
         private void Score_Click_Click(object sender, EventArgs e)
