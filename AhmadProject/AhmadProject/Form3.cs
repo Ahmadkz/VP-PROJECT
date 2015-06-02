@@ -13,9 +13,9 @@ namespace AhmadProject
     public partial class Form3 : Form
     {
         Label firstclicked = null;
-     //   Label ShowingIcon = null;
+     
         
-       int score = 0;
+        int score = 0;
         int randomno;
         Random random = new Random();
         List<string> icons = new List<string>()
@@ -71,7 +71,7 @@ namespace AhmadProject
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void Cards_Click(object sender, EventArgs e)
@@ -92,24 +92,21 @@ namespace AhmadProject
                     return;
                 }
 
-
-                
-
             }
 
             timer1.Start();
             
-            if (ShowIcon.Text == firstclicked.Text)
+            if (Icon_show.Text == firstclicked.Text)
             {
                 iconshow.RemoveAt(randomno);
                 firstclicked = null;
-                ShowIcon_Click(sender, e);
+                Icon_show_Click(sender, e);
                 score++;
                 Score_Click(sender, e);
                 timer1.Stop();
 
             }
-            else if (ShowIcon.Text != firstclicked.Text)
+            else if (Icon_show.Text != firstclicked.Text)
             {
               
                 score--;
@@ -135,40 +132,21 @@ namespace AhmadProject
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-                   
+           
+            
                 score = 0;
+          
                 Score_Click(sender, e);
                 foreach (Control control1 in GameLayout.Controls)
                 {
                     Label iconlabel1 = control1 as Label;
                     iconlabel1.ForeColor = iconlabel1.BackColor;
                 }
-                
-                ShowIcon_Click(sender , e);
+
+                Icon_show_Click(sender, e);
                 
         }
 
-        private void ShowIcon_Click(object sender, EventArgs e)
-        {
-
-            if (iconshow.Count != 0)
-            {
-                randomno = random.Next(iconshow.Count);
-                ShowIcon.Text = iconshow[randomno];
-               // iconshow.RemoveAt(randomno);
-            }
-            else
-            {
-
-
-                Form4 obj4 = new Form4();
-                obj4.Show();
-            }
-
-               
-
-     
-        }
 
         private void Score_Click(object sender, EventArgs e)
         {
@@ -176,30 +154,32 @@ namespace AhmadProject
             Score.Show();
         }
 
-        public int transferscore()
+
+        private void Icon_show_Click(object sender, EventArgs e)
         {
-            return score;
+            if (iconshow.Count != 1)
+            {
+                randomno = random.Next(iconshow.Count);
+                Icon_show.Text = iconshow[randomno];
+               // iconshow.RemoveAt(randomno);
+             
+            }
+            else 
+            {
+                File.WriteAllText(@"C:\Users\Ahmad\Documents\GitHub\VP-Project\ScoreSafe.txt", score.ToString());
+                Form4 obj4 = new Form4();
+                obj4.Show();
+            }
         }
-
-
-        
-
-      
-        
-
-        
-
-        
-
-
 
        
 
-
+        
 
       
-
         
+
+  
 
        
         

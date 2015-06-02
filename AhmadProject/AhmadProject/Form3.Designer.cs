@@ -62,7 +62,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.GameLayout = new System.Windows.Forms.TableLayoutPanel();
             this.StartButton = new System.Windows.Forms.Button();
-            this.ShowIcon = new System.Windows.Forms.Label();
+            this.Icon_show = new System.Windows.Forms.Label();
             this.Score = new System.Windows.Forms.Label();
             this.GameLayout.SuspendLayout();
             this.SuspendLayout();
@@ -585,16 +585,17 @@
             this.StartButton.UseVisualStyleBackColor = true;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // ShowIcon
+            // Icon_show
             // 
-            this.ShowIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ShowIcon.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.ShowIcon.Location = new System.Drawing.Point(858, 92);
-            this.ShowIcon.Name = "ShowIcon";
-            this.ShowIcon.Size = new System.Drawing.Size(144, 86);
-            this.ShowIcon.TabIndex = 2;
-            this.ShowIcon.Text = "c";
-            this.ShowIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Icon_show.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Icon_show.Font = new System.Drawing.Font("Webdings", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.Icon_show.Location = new System.Drawing.Point(858, 92);
+            this.Icon_show.Name = "Icon_show";
+            this.Icon_show.Size = new System.Drawing.Size(144, 86);
+            this.Icon_show.TabIndex = 2;
+            this.Icon_show.Text = "c";
+            this.Icon_show.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Icon_show.Click += new System.EventHandler(this.Icon_show_Click);
             // 
             // Score
             // 
@@ -614,7 +615,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 537);
             this.Controls.Add(this.Score);
-            this.Controls.Add(this.ShowIcon);
+            this.Controls.Add(this.Icon_show);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.GameLayout);
             this.Name = "Form3";
@@ -660,7 +661,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TableLayoutPanel GameLayout;
         private System.Windows.Forms.Button StartButton;
-        private System.Windows.Forms.Label ShowIcon;
+        private System.Windows.Forms.Label Icon_show;
         private System.Windows.Forms.Label Score;
 
         public System.EventHandler button1_Click { get; set; }

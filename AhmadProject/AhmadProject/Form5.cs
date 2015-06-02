@@ -6,13 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AhmadProject
 {
     public partial class Form5 : Form
     {
          Label firstclicked = null;
-       
+
+
         int score = 0;
         int randomno;
         Random random = new Random();
@@ -38,7 +40,6 @@ namespace AhmadProject
 	         "<","#","{","^",
 	         "+","-"
     };
-
         public Form5()
         {
             InitializeComponent();
@@ -46,10 +47,7 @@ namespace AhmadProject
         }
         private void AssignIconsToSquares()
         {
-            Form3 obj3 = new Form3();
-            score = obj3.transferscore();
-
-            foreach (Control control in GameLayout.Controls)
+            foreach (Control control in Gamelayout5.Controls)
             {
                 Label iconlabel = control as Label;
                 if (iconlabel != null)
@@ -67,7 +65,7 @@ namespace AhmadProject
 
         }
 
-        private void Cards_Click(object sender, EventArgs e)
+        private void Cards_Click5(object sender, EventArgs e)
         {
             if (timer1.Enabled == true)
             {
@@ -85,87 +83,84 @@ namespace AhmadProject
                     return;
                 }
 
-
-
-
             }
 
             timer1.Start();
-
-            if (ShowIcon.Text == firstclicked.Text)
+            
+            if (IconShow5.Text == firstclicked.Text)
             {
-                iconshow.RemoveAt(randomno);
+                
                 firstclicked = null;
-                ShowIcon_Click(sender, e);
+                iconshow.RemoveAt(randomno);
+                IconShow5_Click(sender, e);
                 score++;
-                Score_click_Click(sender, e);
+                Score_click5_Click(sender, e);
                 timer1.Stop();
 
             }
-            else if (ShowIcon.Text != firstclicked.Text)
+            else if (IconShow5.Text != firstclicked.Text)
             {
-
+              
                 score--;
 
-                Score_click_Click(sender, e);
+                Score_click5_Click(sender, e);
             }
+            
+                
 
-
-
+                
+            
         }
-
-       
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Stop();
-
+             timer1.Stop();
+          
             firstclicked.ForeColor = firstclicked.BackColor;
-
+            
             firstclicked = null;
         }
 
-        private void ShowIcon_Click(object sender, EventArgs e)
+        private void StartButton5_Click(object sender, EventArgs e)
         {
-            if (iconshow.Count != 0)
+            score = Convert.ToInt32(File.ReadAllText(@"C:\Users\Ahmad\Documents\GitHub\VP-Project\ScoreSafe4.txt"));
+            score++;
+                Score_click5_Click(sender, e);
+                foreach (Control control1 in Gamelayout5.Controls)
+                {
+                    Label iconlabel1 = control1 as Label;
+                    iconlabel1.ForeColor = iconlabel1.BackColor;
+                }
+
+                IconShow5_Click(sender, e);
+        }
+
+        private void IconShow5_Click(object sender, EventArgs e)
+        {
+            if (iconshow.Count != 1)
             {
                 randomno = random.Next(iconshow.Count);
-                ShowIcon.Text = iconshow[randomno];
-                //  iconshow.RemoveAt(randomno);
+                IconShow5.Text = iconshow[randomno];
+             
             }
-            else
+            else 
             {
-                wingame();
+                WinGame();
             }
         }
 
-        private void Start_Click(object sender, EventArgs e)
+        private void Score_click5_Click(object sender, EventArgs e)
         {
-            score = 0;
-            Score_click_Click(sender, e);
-            foreach (Control control1 in GameLayout.Controls)
-            {
-                Label iconlabel1 = control1 as Label;
-                iconlabel1.ForeColor = iconlabel1.BackColor;
-            }
-
-            ShowIcon_Click(sender, e);
+            Score_click5.Text = "SCORE: " + score;
+            Score_click5.Show();
         }
 
-        private void Score_click_Click(object sender, EventArgs e)
+        public void WinGame()
         {
-            Score_click.Text = "SCORE: " + score;
-            Score_click.Show();
+            MessageBox.Show(string.Format("You have finsihed all level of Game your score is : ", score), "Congratulations", MessageBoxButtons.OK);
         }
-        public void wingame()
-        {
-            MessageBox.Show("You Have finished all level your score is {0}", Score_click.Text);
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
+     
 
         }
-
     }
-}
+
